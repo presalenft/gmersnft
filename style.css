@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+
+font-family: 'Roboto', sans-serif;
+font-weight: 100,200,300,400,500,600,700,800,900;
+
+*/
+
+@font-face {
+    font-family: ScribbleNote;
+    src: url("fonts/ScribbleNoteDemoRegular-RpqoE.otf");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #c4ebf1;
+}
+
+/* START OF GENERAL CSS */
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.d-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .4px;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    background-color: #ffffc2;
+    font-family: ScribbleNote;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #000;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #ffd301;
+    border: 3px solid #ffffc2;
+    color: #fff;
+    scale: 1.2;
+}
+
+.color-white {
+    color: #fff!important;
+}
+
+.color-yellow {
+    color: #ffd301!important;
+}
+/* END OF GENERAL CSS */
+
+/* START OF NAVIGATION CSS */
+.navbar {
+    background-color: rgba(138, 209, 245, 0.8);
+    padding: 10px 0px;
+}
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+.nav-link {
+    font-family: ScribbleNote;
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 1.5px 1.5px #000;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #fff684;
+    transition: .3s;
+    scale: 1.2;
+}
+
+.nav-img {
+    width: 125px;
+}
+
+.nav-btn {
+    font-family: ScribbleNote;
+    font-size: 22px;
+    color: #000;
+    background-color: #ffffc2;
+    border: 2px solid #ffffc2;
+    border-radius: 10px;
+    width: 160px;
+    height: 50px;
+    position: relative;
+    transition: .3s;
+}
+
+.nav-btn:hover {
+    transition: .3s;
+    scale: 1.1;
+    background-color: #ffd301;
+    color: #fff;
+    border: 3px solid #ffffc2;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+.nav-icon {
+    color: #ffffc2;
+    transition: .3s;
+}
+
+.nav-icon:hover {
+    color: #ffd301;
+    transition: .3s;
+    scale: 1.2;
+}
+/* END OF NAVIGATION CSS */
+
+/* START OF TOP CSS */
+.top-logo {
+    width: 250px;
+}
+
+.top-container {
+    width: 100%;
+    max-width: 900px;
+    background-image: url("images/Banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: auto;
+    transition: .3s;
+    border-radius: 25px;
+    box-shadow: rgba(137, 199, 231, 0.4) 0px 5px, rgba(137, 199, 231, 0.3) 0px 10px, rgba(137, 199, 231, 0.2) 0px 15px, rgba(137, 199, 231, 0.1) 0px 20px, rgba(137, 199, 231, 0.05) 0px 25px;
+}
+
+.top-description {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    align-items: center;
+    vertical-align: middle;
+    margin: auto;
+    display: inline-grid;
+    font-family: ScribbleNote;
+    font-size: 82px;
+    color: #fff;
+    background-color: rgba(137, 199, 231, 0.4);
+    text-shadow: 3px 3px #000;
+    border-radius: 25px;
+    text-transform: uppercase;
+    visibility: visible;
+    opacity: 1;
+    transition: 3s;
+}
+.top-description.fade {
+    opacity: 0;
+}
+
+.top-container:hover {
+    scale: 1.2;
+    transition: 3s;
+}
+
+.top-container:hover .top-description {
+    visibility: visible;
+    transition: 3s;
+    opacity: 1;
+}
+
+.th-100 {
+    height: calc(100vh - 70px);
+    min-height: 630px;
+}
+
+.top-bg {
+    background-image: url("images/Top_BG.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-information {
+    font-family: ScribbleNote;
+    font-size: 26px;
+    color: #000;
+    text-shadow: 2px 2px #fff684;
+}
+
+.cloud-element {
+    position: absolute;
+}
+
+.cloud-element-1 {
+    top: 70px;
+    left: 500px;
+    width: 150px;
+}
+
+.cloud-element-2 {
+    top: 150px;
+    left: 150px;
+    width: 250px;
+}
+
+.cloud-element-3 {
+    top: 250px;
+    right: 300px;
+    width: 130px;
+}
+
+.cloud-element-4 {
+    top: 120px;
+    right: 450px;
+    width: 200px;
+}
+/* END OF TOP CSS */
+
+/* START OF ABOUT CSS */
+.about-bg {
+    background-image: linear-gradient(#577f97, #7aa5bb);
+}
+
+.about-logo {
+    width: 200px;
+}
+
+.about-img {
+    width: 100%;
+    visibility: hidden;
+}
+
+.about-element {
+    position: absolute;
+}
+
+.about-element-1 {
+	border-radius: 3%;
+    top: 0px;
+    margin-right: 250px;
+    margin-top: 50px;
+	width: 546px;
+}
+
+.w-100 {
+	border-radius: 3%;
+    margin-top: 15px;
+    margin-right: 250px;
+	width: 546px;
+}
+
+.about-element-2 {
+    top: 250px;
+    right: 80px;
+    width: 555px;
+}
+
+.flex-box {
+	  display: flex;
+}
+/* END OF ABOUT CSS */
+
+/* START OF TEAM CSS */
+.team-title {
+    font-family: ScribbleNote;
+    font-size: 62px;
+    text-shadow: 2px 2px #000;
+    font-weight: 900;
+    color: #fff;
+}
+
+.team-sub-title {
+    text-transform: uppercase;
+    color: rgb(240, 240, 240);
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.author-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 100%;
+}
+
+.author-title {
+    font-family: ScribbleNote;
+    font-weight: 900;
+    color: #fff;
+    font-size: 44px;
+    letter-spacing: .8px;
+}
+
+.author-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(230, 230, 230);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.author-description {
+    width: 90%;
+    margin: auto;
+}
+
+.copyright-sub-title {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(230, 230, 230);
+    font-weight: 400;
+}
+
+.stars-bg {
+    background-image: url("images/Stars.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* END OF TEAM CSS */
+
+/* START OF RESPONSIVE CSS */
+@media (min-width: 250px) {
+    .th-100 {
+        height: calc(100vh - 5vh);
+    }
+
+    .top-logo {
+        width: 200px;
+    }
+
+    .mb-nav-item {
+        margin-bottom: 20px!important;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .cloud-element-1 {
+        left: -60px;
+    }
+
+    .cloud-element-2 {
+        top: 180px;
+        left: 80px;
+        width: 150px;
+    }
+
+    .cloud-element-3 {
+        display: none;
+    }
+
+    .cloud-element-4 {
+        display: none;
+    }
+
+
+
+    .about-element-2 {
+        top: 150px;
+        right: 0px;
+        width: 100%;
+    }
+
+    .mb-mt-5 {
+        margin-top: 5rem;
+    }
+
+    .navbar-toggler {
+        padding: 0px;
+        border: 0px solid transparent;
+    }
+
+    .navbar-icon {
+        color: #000;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 576px) {
+    .cloud-element-3 {
+        top: 220px;
+        right: 30px;
+        display: block;
+    }
+
+    .cloud-element-4 {
+        right: 80px;
+        display: block;
+    }
+
+
+
+    .about-element-2 {
+        top: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+
+
+    .nav-btn {
+        width: 160px;
+    }
+
+    .btn {
+        width: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .th-100 {
+        height: calc(100vh - 70px);
+    }
+
+    .mb-mt-5 {
+        margin-top: unset;
+    }
+
+    .mb-nav-item {
+        margin-bottom: auto!important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cloud-element-1 {
+        left: 210px;
+    }
+
+    .cloud-element-2 {
+        top: 150px;
+        left: 40px;
+        width: 250px;
+    }
+
+    .cloud-element-3 {
+        top: 190px;
+        right: 300px;
+    }
+
+    .cloud-element-4 {
+        top: 30px;
+        right: 120px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .cloud-element-1 {
+        left: 500px;
+    }
+
+    .cloud-element-2 {
+        left: 80px;
+    }
+
+    .cloud-element-3 {
+        top: 250px;
+    }
+
+    .cloud-element-4 {
+        top: 120px;
+        right: 450px;
+    }
+}
+/* END OF RESPONSIVE CSS */
